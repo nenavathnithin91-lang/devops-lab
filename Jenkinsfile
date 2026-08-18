@@ -1,15 +1,11 @@
-pipe line {
-  agent any
-  stages {
-    stages('compile') {
-      steps {
-        sh 'python3 HelloWorld.py'
-      }
+pipeline {
+    agent any
+
+    stages {
+        stage('Run Python Program') {
+            steps {
+                sh 'python3 HelloWorld.py'
+            }
+        }
     }
-    stages('run'){
-      steps{
-        sh 'python HelloWorld'
-      }
-    }
-  }
 }
