@@ -1,8 +1,6 @@
-# Addition of two numbers
-
-a = int(input("Enter first number: "))
-b = int(input("Enter second number: "))
+a = 10
+b = 20
 
 sum = a + b
 
-print("Sum =", sum)
+print("Addition =", sum)
